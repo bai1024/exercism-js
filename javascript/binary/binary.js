@@ -1,4 +1,4 @@
-class SpaceAge {
+class Binary {
   constructor(num) {
     this.num = /[^01]/.test(num) ? "0": num
   }
@@ -14,7 +14,7 @@ class SpaceAge {
   }
 }
 
-module.exports = SpaceAge
+module.exports = Binary
 
 //better solution
 // toDecimal(){
