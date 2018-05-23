@@ -1,6 +1,6 @@
 class BeerSong {
-	verse (num){
-		if (num === 0){
+	verse(num) {
+		if (num === 0) {
 			return "No more bottles of beer on the wall, no more bottles of beer.\n"  +
 						 "Go to the store and buy some more, 99 bottles of beer on the wall.\n"
 		} else {
@@ -11,12 +11,12 @@ class BeerSong {
 		}
 	}
 
-	sing (num1,num2){
-		let str = '';
+	sing(num1,num2) {
+		let str = "";
 		let minNum = num2 != null ? num2 : 0
 		for (var i = num1; i >= minNum; i--){
 				if (i !== minNum){
-					str += this.verse(i) + '\n'
+					str += this.verse(i) + "\n"
 				} else {
 					str += this.verse(i)
 				}
@@ -24,7 +24,7 @@ class BeerSong {
 		return str
 	}
 
-	bottles (num){
+	bottles(num) {
     if (num == 0){
       return "no more bottles"
     } else if (num == 1){
@@ -34,7 +34,7 @@ class BeerSong {
     }
 	}
 
-  next_bottle (num){
+  next_bottle(num) {
     if (num == 1){
       return "it";
     } else {

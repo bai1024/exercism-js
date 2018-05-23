@@ -1,6 +1,6 @@
 
 var ArmstrongNumber = {
-	validate: (num) => {
+	validate:(num) => {
         let len = num.toString().split('').length
         let sum = num
             .toString()
