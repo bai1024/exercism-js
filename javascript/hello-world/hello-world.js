@@ -4,4 +4,4 @@ class HelloWorld {
   }
 }
 
-module.exports = HelloWorld;
+module.exports = HelloWorld
