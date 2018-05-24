@@ -1,8 +1,8 @@
 class Raindrops {
   convert(n) {
-    let output = '';
-    let map = new Map([[3, 'Pling'], [5, 'Plang'], [7, 'Plong']]);
-    map.forEach((word, k) => {output += !(n % k) ? word : ''});
+    let output = "";
+    let map = new Map([[3, "Pling"], [5, "Plang"], [7, "Plong"]])
+    map.forEach((word, k) => {output += !(n % k) ? word : ''})
     return output || `${n}`;
   }
 }

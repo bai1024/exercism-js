@@ -1,36 +1,47 @@
-var SpaceAge = function (seconds) {
-	this.seconds = seconds
-};
+class SpaceAge {
+  constructor(seconds) {
+	  this.seconds = seconds
+  }
 
-SpaceAge.prototype.round = function(time){
-	return Math.round(time * 100) / 100
+  round(time){
+	  return Math.round(time * 100) / 100
+  }
+
+  orbitalPeriod(year) {
+	  return year * 31557600
+  }
+
+  onEarth() {
+	  return this.round(this.seconds / 31557600,2)
+  }
+
+  onMercury() {
+	  return this.round(this.seconds / this.orbitalPeriod(0.2408467))
+  }
+
+  onVenus() {
+	  return this.round(this.seconds / this.orbitalPeriod(0.61519726))
+  }
+
+  onMars() {
+	  return this.round(this.seconds / this.orbitalPeriod(1.8808158))
+  }
+
+  onJupiter() {
+	  return this.round(this.seconds / this.orbitalPeriod(11.862615))
+  }
+
+  onSaturn() {
+	  return this.round(this.seconds / this.orbitalPeriod(29.447498))
+  }
+
+  onUranus() {
+	  return this.round(this.seconds / this.orbitalPeriod(84.016846))
+  }
+
+  onNeptune() {
+	  return this.round(this.seconds / this.orbitalPeriod(164.79132))
+  }
 }
-SpaceAge.prototype.orbitalPeriod = function(year) {
-    return year * 31557600
-}
-SpaceAge.prototype.onEarth = function () {
-	return this.round(this.seconds / 31557600,2)
-};
-SpaceAge.prototype.onMercury = function () {
-	 return this.round(this.seconds / this.orbitalPeriod(0.2408467))
-};
-SpaceAge.prototype.onVenus = function () {
-	return this.round(this.seconds / this.orbitalPeriod(0.61519726))
-};
-SpaceAge.prototype.onMars = function () {
-	return this.round(this.seconds / this.orbitalPeriod(1.8808158))
-};
-SpaceAge.prototype.onJupiter = function () {
-	return this.round(this.seconds / this.orbitalPeriod(11.862615))
-};
-SpaceAge.prototype.onSaturn = function () {
-	return this.round(this.seconds / this.orbitalPeriod(29.447498))
-};
-SpaceAge.prototype.onUranus = function () {
-	return this.round(this.seconds / this.orbitalPeriod(84.016846))
-};
-SpaceAge.prototype.onNeptune = function () {
-	return this.round(this.seconds / this.orbitalPeriod(164.79132))
-};
 
 module.exports = SpaceAge;
