@@ -1,6 +1,6 @@
 class SpaceAge {
   constructor(seconds) {
-	  this.seconds = seconds
+    this.seconds = seconds
   }
 
   round(time){
