@@ -3,4 +3,5 @@ class TwoFer {
     return `One for ${who}, one for me.`
   }
 }
+
 module.exports = TwoFer;
