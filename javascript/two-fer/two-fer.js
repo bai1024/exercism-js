@@ -1,12 +1,6 @@
-var TwoFer = function () {};
-
-TwoFer.prototype.twoFer = function (who) {
-  if(who != null){
-  	return `One for ${who}, one for me.`;
-  } else {
-  	return 'One for you, one for me.'
+class TwoFer {
+  twoFer(who = "you") {
+    return `One for ${who}, one for me.`
   }
-  
-};
-
+}
 module.exports = TwoFer;
