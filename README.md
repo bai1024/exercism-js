@@ -1,6 +1,7 @@
 # exercism-js
 
 ✅ [Hello World](http://exercism.io/exercises/javascript/hello-world/readme)
+
 ✅ [Two Fer](http://exercism.io/exercises/javascript/two-fer/readme)
 
 ✅ [Leap](http://exercism.io/exercises/javascript/leap/readme)
