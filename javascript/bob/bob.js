@@ -1,21 +1,24 @@
-const isEmpty = input => Boolean(input.match(/^\s*$/));
+const isEmpty = str => str.match(/^\s*$/);
 
-const isShout = input => Boolean(input.match(/[A-Z]/) && !input.match(/[a-z]/));
+const isShout = str => str.match(/[A-Z]/) && !str.match(/[a-z]/);
 
-const isQuestion = input => Boolean(input.match(/\?\s*$/));
+const isQuestion = str => str.match(/\?\s*$/);
 
 class Bob {
-  hey(input) {
-    if (isShout(input)) {
-      if (isQuestion(input)) {
+  hey(str) {
+    if (isShout(str)) {
+      if (isQuestion(str)) {
         return "Calm down, I know what I'm doing!";
       } else {
         return 'Whoa, chill out!';
       }
+    } else if (isQuestion(str)) {
+      return 'Sure.'
+    } else if (isEmpty(str)) {
+      return 'Fine. Be that way!'
+    } else {
+      return 'Whatever.';
     }
-    if (isQuestion(input)) return 'Sure.';
-    if (isEmpty(input)) return 'Fine. Be that way!';
-    return 'Whatever.';
   }
 }
 
