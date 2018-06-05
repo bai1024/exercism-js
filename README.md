@@ -18,6 +18,8 @@
 
 ✅ [Binary](http://exercism.io/exercises/javascript/binary/readme)
 
+✅ [Isogram](http://exercism.io/exercises/javascript/isogram/readme)
+
 ✅ [Beer Song](http://exercism.io/exercises/javascript/beer-song/readme)
 
 ✅ [Raindrops](http://exercism.io/exercises/javascript/raindrops/readme)
