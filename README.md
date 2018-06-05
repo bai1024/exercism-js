@@ -12,6 +12,8 @@
 
 ✅ [Pangram](http://exercism.io/exercises/javascript/pangram/readme)
 
+✅ [Bob](http://exercism.io/exercises/javascript/bob/readme)
+
 ✅ [Space Age](http://exercism.io/exercises/javascript/space-age/readme)
 
 ✅ [Binary](http://exercism.io/exercises/javascript/binary/readme)
