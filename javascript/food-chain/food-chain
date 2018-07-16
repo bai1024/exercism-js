@@ -1,0 +1,48 @@
+class FoodChain {
+  constructor(verseNum1,verseNum2){
+    this.verseNum1 = verseNum1
+    this.verseNum2 = verseNum2
+    this.arr = ["cow","goat","dog","cat","bird","spider","fly"]
+  }
+  verse() {
+
+
+  }
+
+  reaction(food) {
+    switch (food) {
+      case "spider":
+        return "It wriggled and jiggled and tickled inside her"
+        break
+
+      case "bird":
+        return "How absurd to swallow a bird!"
+        break
+
+      case "cat":
+        return "Imagin that, to swallow a cat"
+        break
+
+      case "dog":
+        return "What a hog, to swallow a dog!"
+        break
+
+      case "goat":
+        return "Just open her throat and swallowed a goat!" 
+        break
+
+      case "cow"：
+        return "I don't know how she swallowed a cow!"
+        break
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
